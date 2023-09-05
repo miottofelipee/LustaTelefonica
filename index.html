@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="pt-BR">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista Telefonica</title>
+    <link rel="stylesheet" href="./assets/css/style.index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="/assets/js/script.index.js"></script>
+</head>
+
+<body>
+    <div id="div-maior">
+        <h1>Agenda Telefonica 📞</h1>
+        <div id="div-inputs">
+            <input type="text" class="styleinpt" placeholder="Nome Completo" id="nome">
+            <input type="number" class="styleinpt" placeholder="Telefone Fixo" id="telefonefix">
+            <input type="number" class="styleinpt" placeholder="Telefone Celular" id="telefonecel">
+            <input type="text" class="styleinpt" placeholder="URL da Foto" id="foto">
+            <input type="date" class="styleinpt" placeholder="" id="data">
+            <input type="text" class="styleinpt" placeholder="E-mail" id="email">
+            <input type="number" class="styleinpt" placeholder="CEP" id="cep">
+            <input type="text" class="styleinpt" placeholder="Cidade" id="cidade">
+            <input type="text" class="styleinpt" placeholder="@instagram" id="insta">
+            <input type="text" class="styleinpt" placeholder="@Github" id="git">
+            <button type="button" id="cadastro" onclick="comporUser()">Cadastrar</button>
+        </div>
+       
+        <p id="msg"></p>
+    </div>
+
+    <div id="usuario" class="hidden" onclick="renderizarConteudoInfos()"></div>
+
+    <div id="usuario-infos"></div>
+</body>
+
+</html>
